@@ -2,26 +2,27 @@
     "universos": [
         {
             "id": 1,
-            "nombre": 1,
-            "logo": "../src/assets/dc-logo.png",
+            "nombre": "DC Comics",
+            "logo": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956196/heroes/dc-banner_m9ah9h.webp",
             "historia": "DC Comics es una editorial de cómics estadounidense. Forma parte de DC Entertainment,1​ una de las empresas que conforman Warner Bros. Entertainment, la cual a su vez es propiedad de Warner Bros. Discovery. Fue fundada en 1934 bajo el nombre National Allied Publications, para luego tomar el nombre de DC Comics en 1937."
         },
         {
             "id": 2,
             "nombre": "Marvel",
-            "logo": "../src/assets/marvel-logo.png",
+            "logo": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956196/heroes/marvel-banner_zdl3mi.webp",
             "historia": "Marvel Worldwide, Inc., conocida como Marvel Comics, es una editorial de historietas estadounidense creada en 1939, inicialmente con el nombre de Timely Publications. Entre sus personajes emblemáticos del género superheroico se encuentran Spider-Man, Wolverine, X-Men, Capitán América, Iron Man, Hulk, Thor, Los 4 Fantásticos, Daredevil, Punisher, Los Vengadores, entre otros. A partir de los años 1990, la compañía se posicionó como una de las principales editoriales de cómics del país. El 31 de agosto de 2009, The Walt Disney Company compró Marvel Entertainment por cerca de 4 000 millones de dólares, fusionándose con esta el 1 de enero de 2010."
         },
         {
             "id": 3,
             "nombre": "Moral Kombat",
-            "logo": "../src/assets/mk-logo.png",
+            "logo": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956198/heroes/kombat-banner_uuis60.png",
             "historia": "Mortal Kombat (comúnmente abreviado MK) es una franquicia de videojuegos de lucha creada por Ed Boon y John Tobias en 1992. Las cuatro primeras entregas fueron distribuidas por Midway Games y lanzadas principalmente en máquinas arcade; posteriormente estuvieron disponibles en consolas domésticas. Los títulos de arcade fueron comprados más tarde por Acclaim Entertainment para las consolas caseras de esa época. La franquicia fue adquirida por Warner Bros en julio de 2009 y se convirtió en una parte de la Warner Bros. Interactive Entertainment. El título más reciente, Mortal Kombat 11, fue publicado en abril de 2019. Como resultado de su éxito, Mortal Kombat ha dado lugar a varias secuelas y se ha escindido en varios juegos de acción y aventura, ha tenido películas, series de televisión e historietas. La serie es conocida por su violencia gráfica, incluyendo particularmente los fatalities, un movimiento especial que para ser realizado se requiere hacer una combinación específica de botones, que posteriormente llevó a las empresas de videojuegos a crear la ESRB "
         }
     ],
     "heroes": [
         {
             "id": 1,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956225/heroes/dc-batman_xv8it6.jpg",
             "superhero": "Batman", 
             "publisher": 1, 
             "alter_ego": "Bruce Wayne",
@@ -30,6 +31,7 @@
         },
         {
             "id": 2,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956228/heroes/dc-superman_a8y4a7.jpg",
             "superhero": "Superman", 
             "publisher": 1, 
             "alter_ego": "Kal-El",
@@ -38,6 +40,7 @@
         },
         {
             "id": 3,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956226/heroes/dc-flash_h0x9yk.jpg",
             "superhero": "Flash", 
             "publisher": 1, 
             "alter_ego": "Jay Garrick",
@@ -46,6 +49,7 @@
         },
         {
             "id": 4,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956226/heroes/dc-green_ozey4c.jpg",
             "superhero": "Green Lantern", 
             "publisher": 1, 
             "alter_ego": "Alan Scott",
@@ -54,6 +58,7 @@
         },
         {
             "id": 5,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956227/heroes/marvel-hawkeye_w6viaq.jpg",
             "superhero": "Green Arrow", 
             "publisher": 1, 
             "alter_ego": "Oliver Queen",
@@ -62,6 +67,7 @@
         },
         {
             "id": 6,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956228/heroes/dc-wonder_jx6flp.jpg",
             "superhero": "Wonder Woman", 
             "publisher": 1, 
             "alter_ego": "Princess Diana",
@@ -70,6 +76,7 @@
         },
         {
             "id": 7,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956226/heroes/dc-martian_qaozdv.jpg",
             "superhero": "Martian Manhunter", 
             "publisher": 1, 
             "alter_ego": "J\"onn J\"onzz",
@@ -78,6 +85,7 @@
         },
         {
             "id": 8,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956225/heroes/dc-robin_xx0s1f.jpg",
             "superhero": "Robin/Nightwing", 
             "publisher": 1, 
             "alter_ego": "Dick Grayson",
@@ -86,6 +94,7 @@
         },
         {
             "id": 9,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956226/heroes/dc-blue_sihafo.jpg",
             "superhero": "Blue Beetle", 
             "publisher": 1, 
             "alter_ego": "Dan Garret",
@@ -94,6 +103,7 @@
         },
         {
             "id": 10,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956225/heroes/dc-black_q99rfq.jpg",
             "superhero": "Black Canary", 
             "publisher": 1, 
             "alter_ego": "Dinah Drake",
@@ -102,6 +112,7 @@
         },
         {
             "id": 11,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956228/heroes/marvel-spider_mtbh2q.jpg",
             "superhero": "Spider Man", 
             "publisher": 2, 
             "alter_ego": "Peter Parker",
@@ -110,6 +121,7 @@
         },
         {
             "id": 12,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956226/heroes/marvel-captain_pazaic.jpg",
             "superhero": "Captain America", 
             "publisher": 2, 
             "alter_ego": "Steve Rogers",
@@ -118,6 +130,7 @@
         },
         {
             "id": 13,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956228/heroes/marvel-iron_cbfdq8.jpg",
             "superhero": "Iron Man", 
             "publisher": 2, 
             "alter_ego": "Tony Stark",
@@ -126,6 +139,7 @@
         },
         {
             "id": 14,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956227/heroes/marvel-thor_wvpf61.jpg",
             "superhero": "Thor", 
             "publisher": 2, 
             "alter_ego": "Thor Odinson",
@@ -134,6 +148,7 @@
         },
         {
             "id": 15,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956228/heroes/marvel-hulk_ro9k08.jpg",
             "superhero": "Hulk", 
             "publisher": 2, 
             "alter_ego": "Bruce Banner",
@@ -142,6 +157,7 @@
         },
         {
             "id": 16,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956227/heroes/marvel-wolverine_inry0u.jpg",
             "superhero": "Wolverine", 
             "publisher": 2, 
             "alter_ego": "James Howlett",
@@ -150,6 +166,7 @@
         },
         {
             "id": 17,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956227/heroes/marvel-daredevil_yjko64.jpg",
             "superhero": "Daredevil", 
             "publisher": 2, 
             "alter_ego": "Matthew Michael Murdock",
@@ -158,6 +175,7 @@
         },
         {
             "id": 18,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956227/heroes/marvel-hawkeye_w6viaq.jpg",
             "superhero": "Hawkeye", 
             "publisher": 2, 
             "alter_ego": "Clinton Francis Barton",
@@ -166,6 +184,7 @@
         },
         {
             "id": 19,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956226/heroes/marvel-cyclops_easxgk.jpg",
             "superhero": "Cyclops", 
             "publisher": 2, 
             "alter_ego": "Scott Summers",
@@ -174,6 +193,7 @@
         },
         {
             "id": 20,
+            "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956228/heroes/marvel-silver_yjd5vg.jpg",
             "superhero": "Silver Surfer", 
             "publisher": 2, 
             "alter_ego": "Norrin Radd",
