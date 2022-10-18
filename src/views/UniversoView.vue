@@ -1,7 +1,12 @@
 <template>
     <div>
-        <header>
-            <h4>Universos de Heroes</h4>
+        <header class="d-flex p-2 flex-column">
+            <div class="d-flex justify-content-center">
+                <h4>Universos de Heroes</h4> 
+            </div>
+            <div class="d-flex justify-content-end">
+                <button class="btn btn-primary" @click="irCrear()"> + Nuevo </button>
+            </div>
             <hr>
         </header>
         <main>
@@ -16,7 +21,7 @@
                         <div class="btn-group" role="group">
                             <button type="button" @click="irA('ver', value.id)" class="btn btn-primary">Ver</button>
                             <button type="button" @click="irA('editar', value.id)" class="btn btn-secondary">Editar</button>
-                            <button type="button" @click="irA('eliminar', value.id)" class="btn btn-danger">Eliminar</button>
+                            <button type="button" @click="borrarUniverso(value.id)" class="btn btn-danger">Eliminar</button>
                         </div>
                     </div>
                 </div>
@@ -65,12 +70,26 @@ export default {
             })
             .catch( error => console.log(error));
         },
+        borrarUniverso(id) {
+            console.log(id);
+            axios({
+                method: "delete",
+                url: "http://localhost:3333/universos/"+id
+            })
+            .then( response => {
+                console.log(response);
+            })
+            .catch( error => console.log(error));
+        },
         irA(opcion, universo_id){
             if(opcion === 'editar'){
                 this.$router.push({ name: 'editarUniverso', params:{ id: universo_id }});
             } else if(opcion === 'ver') {
                 this.$router.push({ name: 'verUniverso', params:{ id: universo_id }});
-            }
+            } 
+        },
+        irCrear(){
+            this.$router.push({ name: 'crearUniverso' });
         }
     },
     computed: {

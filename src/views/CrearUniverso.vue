@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h4>Editar Universo</h4>
+        <h4>Crear Universo</h4>
         <form @submit.prevent="guardarUniverso()">
             <div class="form-group row mt-5">
                 <div className="col-4"> 
@@ -31,29 +31,22 @@
   
 <script>
 export default {
-    name: 'EditarUniverso',
+    name: 'CrearUniverso',
     data(){
         return {
-            universo: {}
+            universo: {
+                id: new Date().getMilliseconds(),
+                nombre: null,
+                logo: null,
+                historia: null
+            }
         }
     },
     methods: {
-        getUniversoById() {
-            axios({
-                method: "get",
-                url: "http://localhost:3333/universos/"+this.$route.params.id 
-            })
-            .then( response => {
-                this.universo = response.data;
-            })
-            .catch( error => {
-                console.log(error);
-            });
-        },
         guardarUniverso() {
             axios({
-                method: "patch",
-                url: "http://localhost:3333/universos/"+this.$route.params.id ,
+                method: "post",
+                url: "http://localhost:3333/universos/" ,
                 data: this.universo
             })
             .then( response => {
@@ -88,7 +81,6 @@ export default {
 
     },
     mounted(){
-        this.getUniversoById();
     },
     components: {
     }
