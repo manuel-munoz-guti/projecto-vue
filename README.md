@@ -1,5 +1,7 @@
 # vue-final-project
 
+Proyecto final de modulo 6 diplpomado USIP. Desarrollo de backend con Vue.JS
+
 integrantes:
  1. Jose Manuel Munoz Gutierrez
  2. Marianela Munoz Gutierrrez
