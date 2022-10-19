@@ -3,7 +3,7 @@
         <h4>Editar Heroes y Villanos</h4>
         <form @submit.prevent="guardarHeroe()">
             <div class="form-group row mt-5">
-                <div className="col-4"> 
+                <div className="col-4 animate__animated animate__fadeIn"> 
                     <img :src="heroe.url" 
                         :alt="heroe.superhero"
                         className="img-thumbnail"

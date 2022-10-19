@@ -14,10 +14,10 @@
                     <router-link class="nav-link" to="/heroes">Heroes</router-link>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <div v-if=" this.$router.currentRoute.value.name === 'heroes' || this.$router.currentRoute.value.name === 'universos' " class="d-flex" >
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" v-model="buscado">
+                <button class="btn btn-outline-success" @click="irA()">Buscar</button>
+            </div>
             </div>
         </div>
     </nav>  
@@ -28,14 +28,23 @@ export default {
     name: 'AppMenu',
     data(){
         return {
-            mensaje: 'heroes y villanos'
+            buscado: ''
         }
     },
     props: [
         "titulo"
     ],
     methods: {
-
+        irA(){
+            console.log('ruta... ', this.$router.currentRoute.value);
+            if( this.$router.currentRoute.value.name === 'heroes' || this.$router.currentRoute.value.name === 'buscarHeroe'){
+                this.$router.push({ name: 'buscarHeroe', params:{ name: this.buscado }});  
+                this.buscado='';           
+            } else if( this.$router.currentRoute.value.name === 'universos' || this.$router.currentRoute.value.name === 'buscarUniverso') {
+                this.$router.push({ name: 'buscarUniverso', params:{ name: this.buscado }});
+                this.buscado='';
+            }    
+        }
     },
     computed: {
 

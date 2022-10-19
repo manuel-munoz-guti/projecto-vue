@@ -3,7 +3,7 @@
         <h4>Editar Universo</h4>
         <form @submit.prevent="guardarUniverso()">
             <div class="form-group row mt-5">
-                <div className="col-4"> 
+                <div className="col-4 animate__animated animate__fadeIn"> 
                     <img :src="universo.logo" 
                         :alt="universo.nombre"
                         className="img-thumbnail"

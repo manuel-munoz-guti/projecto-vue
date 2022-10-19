@@ -45,7 +45,7 @@
   
 <script>
 export default {
-    name: 'Crearheroe',
+    name: 'CrearHeroe',
     data(){
         return {
             heroe: {

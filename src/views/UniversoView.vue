@@ -11,7 +11,7 @@
         </header>
         <main>
             <section>
-                <div v-for="(value, key, index) of universos" :key="index" class="card mb-3 align-items-center">
+                <div v-for="(value, key, index) of universos" :key="index" class="card mb-3 align-items-center animate__animated animate__backInUp">
                     <div class="d-flex p-2 w-50">
                         <img :src="value.logo" class="card-img-top" alt="">
                     </div>

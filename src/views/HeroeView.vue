@@ -4,14 +4,17 @@
           <div class="d-flex justify-content-center">
             <h4>Heroes y Villanos</h4>
           </div>
-          <div class="d-flex justify-content-end">
+          <div class="d-flex flex-row justify-content-between">
+              <select class="form-select w-25" v-model="universoFiltro" @change.prevent="filtrarHeroe()">
+                <option :key="universo.id" v-for="universo in universos">{{ universo.nombre }}</option>
+              </select>
               <button class="btn btn-primary" @click="irCrear()"> + Nuevo </button>
           </div>
           <hr>
       </header>
       
       <div className="row rows-cols-1 row-cols-md-3 g-3">
-        <div v-for="(value, key, index) of heroes" :key="index" className="col">
+        <div v-for="(value, key, index) of heroes" :key="index" className="col animate__animated animate__backInUp">
             <div className="card">
                 <div className="row no-gutters">
                     <div className="col-4">
@@ -45,17 +48,23 @@ export default {
     data(){
         return {
             heroes: [],
-            heroeUno: {
-                id: new Date().getMilliseconds,  
-                superhero: null, 
-                publisher: null, 
-                alter_ego: null,
-                first_appearance: null,
-                characters: null
-            }
+            universos: [],
+            universoFiltro: ''
         }
     },
     methods: {
+        getUniversosSelect() {
+            axios({
+                method: "get",
+                url: "http://localhost:3333/universos"
+            })
+            .then( response => {
+                this.universos = response.data;
+            })
+            .catch( error => {
+                console.log(error);
+            });
+        },
         getHeroes() {
             axios({
                 method: "get",
@@ -98,13 +107,26 @@ export default {
         },
         irCrear(){
             this.$router.push({ name: 'crearHeroe' });
+        },
+        filtrarHeroe() {
+            axios({
+                method: "get",
+                url: "http://localhost:3333/heroes?publisher="+ this.universoFiltro
+            })
+            .then( response => {
+                this.heroes = response.data;
+            })
+            .catch( error => {
+                console.log(error);
+            });
         }
     },
     computed: {
 
     },
     mounted(){
-        this.getHeroes();   
+        this.getHeroes();
+        this.getUniversosSelect();
     },
     components: {
     }
