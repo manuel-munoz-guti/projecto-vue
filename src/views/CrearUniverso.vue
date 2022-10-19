@@ -59,8 +59,6 @@ export default {
             const preset='heroes-vue';
             const image = event.target.files[0];
 
-            console.log('Tnemos el archivo', image);
-
             let formData = new FormData();
             formData.append('file', image);
             formData.append('upload_preset', preset);

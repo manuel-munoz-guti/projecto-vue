@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h4>Editar Heroes y Villanos</h4>
+        <h4>Crear Heroe</h4>
         <form @submit.prevent="guardarHeroe()">
             <div class="form-group row mt-5">
                 <div className="col-4"> 
@@ -45,30 +45,32 @@
   
 <script>
 export default {
-    name: 'EditarHeroe',
+    name: 'Crearheroe',
     data(){
         return {
-            heroe: {},
-            universos: []
+            heroe: {
+                id: new Date().getMilliseconds(),
+                url: null,
+                superhero: null,
+                publisher: null,
+                alter_ego: null,
+                first_appearance: null,
+                characters: null
+            },
+            universos: [],
+            universo: {
+                id: null,
+                nombre: null,
+                logo: null,
+                historia: null
+            }
         }
     },
     methods: {
-        getHeroeById() {
-            axios({
-                method: "get",
-                url: "http://localhost:3333/heroes/"+this.$route.params.id 
-            })
-            .then( response => {
-                this.heroe = response.data;
-            })
-            .catch( error => {
-                console.log(error);
-            });
-        },
         guardarHeroe() {
             axios({
-                method: "patch",
-                url: "http://localhost:3333/heroes/"+this.$route.params.id ,
+                method: "post",
+                url: "http://localhost:3333/heroes/" ,
                 data: this.heroe
             })
             .then( response => {
@@ -113,10 +115,10 @@ export default {
 
     },
     mounted(){
-        this.getHeroeById();
         this.getUniversos();
     },
     components: {
     }
 }
 </script>
+  

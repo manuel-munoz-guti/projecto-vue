@@ -71,7 +71,6 @@ export default {
             .catch( error => console.log(error));
         },
         borrarUniverso(id) {
-            console.log(id);
             axios({
                 method: "delete",
                 url: "http://localhost:3333/universos/"+id

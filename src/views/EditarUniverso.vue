@@ -22,10 +22,6 @@
                 </div>
             </div>
         </form>
-        <div className="">
-            
-            
-        </div>
     </div>
 </template>
   
@@ -65,8 +61,6 @@ export default {
             const urlCloudinary='https://api.cloudinary.com/v1_1/manuel-munoz-guti/image/upload';
             const preset='heroes-vue';
             const image = event.target.files[0];
-
-            console.log('Tnemos el archivo', image);
 
             let formData = new FormData();
             formData.append('file', image);

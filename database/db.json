@@ -24,7 +24,7 @@
       "id": 1,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956225/heroes/dc-batman_xv8it6.jpg",
       "superhero": "Batman",
-      "publisher": 1,
+      "publisher": "DC Comics",
       "alter_ego": "Bruce Wayne",
       "first_appearance": "Detective Comics #27",
       "characters": "Bruce Wayne"
@@ -33,7 +33,7 @@
       "id": 2,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956228/heroes/dc-superman_a8y4a7.jpg",
       "superhero": "Superman",
-      "publisher": 1,
+      "publisher": "DC Comics",
       "alter_ego": "Kal-El",
       "first_appearance": "Action Comics #1",
       "characters": "Kal-El"
@@ -42,7 +42,7 @@
       "id": 3,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956226/heroes/dc-flash_h0x9yk.jpg",
       "superhero": "Flash",
-      "publisher": 1,
+      "publisher": "DC Comics",
       "alter_ego": "Jay Garrick",
       "first_appearance": "Flash Comics #1",
       "characters": "Jay Garrick, Barry Allen, Wally West, Bart Allen"
@@ -51,7 +51,7 @@
       "id": 4,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956226/heroes/dc-green_ozey4c.jpg",
       "superhero": "Green Lantern",
-      "publisher": 1,
+      "publisher": "DC Comics",
       "alter_ego": "Alan Scott",
       "first_appearance": "All-American Comics #16",
       "characters": "Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz"
@@ -60,7 +60,7 @@
       "id": 5,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956227/heroes/marvel-hawkeye_w6viaq.jpg",
       "superhero": "Green Arrow",
-      "publisher": 1,
+      "publisher": "DC Comics",
       "alter_ego": "Oliver Queen",
       "first_appearance": "More Fun Comics #73",
       "characters": "Oliver Queen"
@@ -69,16 +69,16 @@
       "id": 6,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956228/heroes/dc-wonder_jx6flp.jpg",
       "superhero": "Wonder Woman",
-      "publisher": 1,
-      "alter_ego": "Princess Diana",
+      "publisher": "DC Comics",
+      "alter_ego": "Princesa Diana",
       "first_appearance": "All Star Comics #8",
-      "characters": "Princess Diana"
+      "characters": "Princesa Diana"
     },
     {
       "id": 7,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956226/heroes/dc-martian_qaozdv.jpg",
       "superhero": "Martian Manhunter",
-      "publisher": 1,
+      "publisher": "DC Comics",
       "alter_ego": "J\"onn J\"onzz",
       "first_appearance": "Detective Comics #225",
       "characters": "Martian Manhunter"
@@ -87,7 +87,7 @@
       "id": 8,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956225/heroes/dc-robin_xx0s1f.jpg",
       "superhero": "Robin/Nightwing",
-      "publisher": 1,
+      "publisher": "DC Comics",
       "alter_ego": "Dick Grayson",
       "first_appearance": "Detective Comics #38",
       "characters": "Dick Grayson"
@@ -96,7 +96,7 @@
       "id": 9,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956226/heroes/dc-blue_sihafo.jpg",
       "superhero": "Blue Beetle",
-      "publisher": 1,
+      "publisher": "DC Comics",
       "alter_ego": "Dan Garret",
       "first_appearance": "Mystery Men Comics #1",
       "characters": "Dan Garret, Ted Kord, Jaime Reyes"
@@ -105,7 +105,7 @@
       "id": 10,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956225/heroes/dc-black_q99rfq.jpg",
       "superhero": "Black Canary",
-      "publisher": 1,
+      "publisher": "DC Comics",
       "alter_ego": "Dinah Drake",
       "first_appearance": "Flash Comics #86",
       "characters": "Dinah Drake, Dinah Lance"
@@ -114,7 +114,7 @@
       "id": 11,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956228/heroes/marvel-spider_mtbh2q.jpg",
       "superhero": "Spider Man",
-      "publisher": 2,
+      "publisher": "Marvel",
       "alter_ego": "Peter Parker",
       "first_appearance": "Amazing Fantasy #15",
       "characters": "Peter Parker"
@@ -123,7 +123,7 @@
       "id": 12,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956226/heroes/marvel-captain_pazaic.jpg",
       "superhero": "Captain America",
-      "publisher": 2,
+      "publisher": "Marvel",
       "alter_ego": "Steve Rogers",
       "first_appearance": "Captain America Comics #1",
       "characters": "Steve Rogers"
@@ -132,7 +132,7 @@
       "id": 13,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956228/heroes/marvel-iron_cbfdq8.jpg",
       "superhero": "Iron Man",
-      "publisher": 2,
+      "publisher": "Marvel",
       "alter_ego": "Tony Stark",
       "first_appearance": "Tales of Suspense #39",
       "characters": "Tony Stark"
@@ -141,7 +141,7 @@
       "id": 14,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956227/heroes/marvel-thor_wvpf61.jpg",
       "superhero": "Thor",
-      "publisher": 2,
+      "publisher": "Marvel",
       "alter_ego": "Thor Odinson",
       "first_appearance": "Journey into Myster #83",
       "characters": "Thor Odinson"
@@ -150,7 +150,7 @@
       "id": 15,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956228/heroes/marvel-hulk_ro9k08.jpg",
       "superhero": "Hulk",
-      "publisher": 2,
+      "publisher": "Marvel",
       "alter_ego": "Bruce Banner",
       "first_appearance": "The Incredible Hulk #1",
       "characters": "Bruce Banner"
@@ -159,7 +159,7 @@
       "id": 16,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956227/heroes/marvel-wolverine_inry0u.jpg",
       "superhero": "Wolverine",
-      "publisher": 2,
+      "publisher": "Marvel",
       "alter_ego": "James Howlett",
       "first_appearance": "The Incredible Hulk #180",
       "characters": "James Howlett"
@@ -168,7 +168,7 @@
       "id": 17,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956227/heroes/marvel-daredevil_yjko64.jpg",
       "superhero": "Daredevil",
-      "publisher": 2,
+      "publisher": "Marvel",
       "alter_ego": "Matthew Michael Murdock",
       "first_appearance": "Daredevil #1",
       "characters": "Matthew Michael Murdock"
@@ -177,7 +177,7 @@
       "id": 18,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956227/heroes/marvel-hawkeye_w6viaq.jpg",
       "superhero": "Hawkeye",
-      "publisher": 2,
+      "publisher": "Marvel",
       "alter_ego": "Clinton Francis Barton",
       "first_appearance": "Tales of Suspense #57",
       "characters": "Clinton Francis Barton"
@@ -186,7 +186,7 @@
       "id": 19,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956226/heroes/marvel-cyclops_easxgk.jpg",
       "superhero": "Cyclops",
-      "publisher": 2,
+      "publisher": "Marvel",
       "alter_ego": "Scott Summers",
       "first_appearance": "X-Men #1",
       "characters": "Scott Summers"
@@ -195,7 +195,7 @@
       "id": 20,
       "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1665956228/heroes/marvel-silver_yjd5vg.jpg",
       "superhero": "Silver Surfer",
-      "publisher": 2,
+      "publisher": "Marvel",
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"

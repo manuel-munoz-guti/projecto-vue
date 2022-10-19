@@ -10,13 +10,11 @@
             <div className="col-8">
                 <h3> {{ heroe.superhero }} </h3>
                 <ul className="list-group list-group-flush">
-                <li className="list-group-item"> <b>Alter ego:</b> test </li>
-                <li className="list-group-item"> <b>Publisher:</b> test </li>
-                <li className="list-group-item"> <b>First Appearance:</b> test </li>
+                    <li className="list-group-item"> <b>Alter ego:</b> {{ heroe.alter_ego }}</li>
+                    <li className="list-group-item"> <b>Publisher:</b> {{ heroe.publisher }} </li>
+                    <li className="list-group-item"> <b>First Appearance:</b> {{ heroe.first_appearance }} </li>
                 </ul>
-                <h5 className="mt-3"> Characters </h5>
-                <p> test </p>
-
+                <h5 className="mt-3"> {{ heroe.characters }} </h5>
             </div>
         </div>
     </div>

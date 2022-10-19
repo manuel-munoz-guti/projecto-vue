@@ -1,6 +1,15 @@
 <template>
     <div>
-      <h4>Heroes y Villanos</h4>
+      <header class="d-flex p-2 flex-column">
+          <div class="d-flex justify-content-center">
+            <h4>Heroes y Villanos</h4>
+          </div>
+          <div class="d-flex justify-content-end">
+              <button class="btn btn-primary" @click="irCrear()"> + Nuevo </button>
+          </div>
+          <hr>
+      </header>
+      
       <div className="row rows-cols-1 row-cols-md-3 g-3">
         <div v-for="(value, key, index) of heroes" :key="index" className="col">
             <div className="card">
@@ -19,7 +28,7 @@
                             <div class="btn-group" role="group">
                                 <button type="button" @click="irA('ver', value.id)" class="btn btn-primary">Ver</button>
                                 <button type="button" @click="irA('editar', value.id)" class="btn btn-secondary">Editar</button>
-                                <button type="button" @click="irA('eliminar', value.id)" class="btn btn-danger">Eliminar</button>
+                                <button type="button" @click="borrarHeroe(value.id)" class="btn btn-danger">Eliminar</button>
                             </div>
                         </div>
                     </div>
@@ -70,12 +79,25 @@ export default {
             })
             .catch( error => console.log(error));
         },
+        borrarHeroe(id) {
+            axios({
+                method: "delete",
+                url: "http://localhost:3333/heroes/"+id
+            })
+            .then( response => {
+                this.heroes = this.heroes.filter( heroe =>  heroe.id !== id );
+            })
+            .catch( error => console.log(error));
+        },
         irA(opcion, heroe_id){
             if(opcion === 'editar'){
                 this.$router.push({ name: 'editarHeroe', params:{ id: heroe_id }});
             } else if(opcion === 'ver') {
                 this.$router.push({ name: 'verHeroe', params:{ id: heroe_id }});
             }
+        },
+        irCrear(){
+            this.$router.push({ name: 'crearHeroe' });
         }
     },
     computed: {
