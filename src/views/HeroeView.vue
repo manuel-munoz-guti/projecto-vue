@@ -2,7 +2,7 @@
     <div>
       <header class="d-flex p-2 flex-column">
           <div class="d-flex justify-content-center">
-            <h4>Heroes y Villanos</h4>
+            <h2 class="p-3">Heroes y Villanos</h2>
           </div>
           <div class="d-flex flex-row justify-content-between">
               <select class="form-select w-25" v-model="universoFiltro" @change.prevent="filtrarHeroe()">
@@ -53,6 +53,20 @@ export default {
         }
     },
     methods: {
+        successAlert() {
+            this.$swal({
+                icon: 'success',
+                title: 'Exito',
+                text: 'Se elimino el heroe satisfactoriamente',
+            });
+        },
+        errorAlert() {
+            this.$swal({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong!',
+            });
+        },
         getUniversosSelect() {
             axios({
                 method: "get",
@@ -77,17 +91,6 @@ export default {
                 console.log(error);
             });
         },
-        agregarHeroe() {
-            axios({
-                method: "post",
-                url: "http://localhost:3333/heroes",
-                data: this.heroe
-            })
-            .then( response => {
-                console.log(response);
-            })
-            .catch( error => console.log(error));
-        },
         borrarHeroe(id) {
             axios({
                 method: "delete",
@@ -95,8 +98,12 @@ export default {
             })
             .then( response => {
                 this.heroes = this.heroes.filter( heroe =>  heroe.id !== id );
+                successAlert();
             })
-            .catch( error => console.log(error));
+            .catch( error => {
+                errorAlert();
+                console.log(error)
+            });
         },
         irA(opcion, heroe_id){
             if(opcion === 'editar'){

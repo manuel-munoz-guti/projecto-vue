@@ -1,5 +1,5 @@
 <template>
-  <app-menu titulo="Super Heroes"></app-menu>
+  <app-menu titulo="HeroCard App"></app-menu>
   <router-view/>
 </template>
 
@@ -35,6 +35,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+body, html {
+  background-color: #FFFF;
+  color: #0000;
 }
 
 nav {

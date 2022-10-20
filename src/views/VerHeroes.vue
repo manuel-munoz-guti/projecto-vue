@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div className="row mt-5">
+        <div className="row mt-5 p-4">
             <div className="col-4 animate__animated animate__fadeIn"> 
                 <img :src="heroe.url" 
                     :alt="heroe.superhero"

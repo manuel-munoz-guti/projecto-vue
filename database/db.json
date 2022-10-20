@@ -208,6 +208,24 @@
       "alter_ego": "Reptile",
       "first_appearance": "Moral Kombat 1",
       "characters": "David Akano"
+    },
+    {
+      "id": 417,
+      "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1666225293/heroes/lvhktq7roxlfqlnavxy5.webp",
+      "superhero": "Deadpool",
+      "publisher": "Marvel",
+      "alter_ego": "Ryan Reynols",
+      "first_appearance": "Deadpool 1",
+      "characters": "Ryan Reynols"
+    },
+    {
+      "id": 802,
+      "url": "https://res.cloudinary.com/manuel-munoz-guti/image/upload/v1666232391/heroes/qk4tsxnrkrgwaekc8y2o.jpg",
+      "superhero": "Subzero",
+      "publisher": "Mortal Kombat",
+      "alter_ego": "Lin Kuei",
+      "first_appearance": "comic Mortal Kombat#2",
+      "characters": "Mac Macgregor"
     }
   ]
 }
