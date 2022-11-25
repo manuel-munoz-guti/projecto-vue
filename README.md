@@ -1,25 +1,17 @@
-# vue-final-project
+# MODULO 8
 
 Proyecto final de modulo 6 diplpomado USIP. Desarrollo de backend con Vue.JS
+Proyecto final modulo 8 diplomado USIP
 
 integrantes:
  1. Jose Manuel Munoz Gutierrez
  2. Marianela Munoz Gutierrrez
 
-## Project setup
-```
-npm install
-```
+## Build Docker Image
+ `docker build -t diplomado/heroes-app .`
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Running the Image in port 8080
+ `docker run -p 8080:80 --name heroes-app diplomado/heroes-app`
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Enter the App via Docker container
+ `http://localhost:8080/#/`
